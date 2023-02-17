@@ -14,4 +14,9 @@ public class HelloController {
         return "index";
     }
 
+    @RequestMapping("/list")
+    public String list() {
+        return "list";
+    }
+
 }

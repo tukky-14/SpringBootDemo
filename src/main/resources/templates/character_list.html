@@ -45,12 +45,11 @@
               class="form-select"
               aria-label="Default select example"
             >
-              <option selected>強化系</option>
-              <option value="1">変化系</option>
-              <option value="2">具現化系</option>
-              <option value="3">操作系</option>
-              <option value="4">放出系</option>
-              <option value="5">特質系</option>
+              <option
+                th:each="abilityType : ${abilityTypes}"
+                th:value="${abilityType.id}"
+                th:text="${abilityType.name}"
+              ></option>
             </select>
           </div>
         </div>
@@ -81,19 +80,19 @@
             <thead>
               <tr>
                 <th scope="col">No.</th>
-                <th scope="col">系統</th>
                 <th scope="col">名前</th>
+                <th scope="col">系統</th>
                 <th scope="col">念能力</th>
                 <th scope="col">名セリフ</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>強化系</td>
-                <td>ゴン=フリークス</td>
-                <td>ジャジャン拳</td>
-                <td>もうこれで終わってもいい・・・だからありったけを</td>
+              <tr th:each="character : ${characters}">
+                <td scope="row" th:text="${character.id}"></td>
+                <td th:text="${character.name}"></td>
+                <td th:text="${character.ability_type}"></td>
+                <td th:text="${character.ability_name}"></td>
+                <td th:text="${character.quote}"></td>
               </tr>
             </tbody>
           </table>

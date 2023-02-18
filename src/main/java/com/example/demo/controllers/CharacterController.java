@@ -28,6 +28,8 @@ public class CharacterController {
         List<Character> characters = new ArrayList<>();
         characters.add(new Character(1, "ゴン＝フリークス", "強化系", "ジャジャン拳", "もうこれで終わってもいい・・・だからありったけを", 1, "", ""));
         characters.add(new Character(2, "キルア＝ゾルディック", "変化系", "電光石火", "オレなら平気だよ訓練してるから毒じゃ死なない", 1, "", ""));
+        characters.add(new Character(3, "クラピカ", "具現化系", "束縛する中指の鎖", "2度と旅団の名を語らぬことだ・・・さもないと私がお前を殺す", 1, "", ""));
+        characters.add(new Character(4, "レオリオ＝パラディナイト", "放出系", "不明", "相手が「もう帰ってくれ」って言ってからが本当の商談だぜ", 1, "", ""));
 
         model.addAttribute("abilityTypes", abilityTypes);
         model.addAttribute("characters", characters);

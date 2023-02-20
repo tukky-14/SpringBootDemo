@@ -1,0 +1,13 @@
+version: "3.1"
+
+services:
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root # rootユーザパスワード
+      MYSQL_DATABASE: hunterdb # データベース名
+      MYSQL_USER: dev # ユーザ名
+      MYSQL_PASSWORD: dev # パスワード
+    ports:
+      - 3307:3306 # コンテナ外部からアクセス可能にする

@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.example.bean.AbilityType;
 import com.example.bean.Character;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class CharacterController {
 
     @RequestMapping("/")
@@ -33,6 +36,9 @@ public class CharacterController {
 
         model.addAttribute("abilityTypes", abilityTypes);
         model.addAttribute("characters", characters);
+
+        log.info("characters: {}", characters);
+
         return "character_list";
 
     }

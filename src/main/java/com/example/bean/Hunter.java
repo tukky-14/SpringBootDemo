@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Character {
+public class Hunter {
 
     // キャラクター番号
     private Integer id;

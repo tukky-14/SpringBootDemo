@@ -48,7 +48,7 @@
               <option
                 th:each="abilityType : ${abilityTypes}"
                 th:value="${abilityType.id}"
-                th:text="${abilityType.name}"
+                th:text="${abilityType.ability_name}"
               ></option>
             </select>
           </div>
@@ -89,7 +89,7 @@
             <tbody>
               <tr th:each="hunter: ${hunters}" th:object="${hunter}">
                 <td scope="row" th:text="*{id}"></td>
-                <td th:text="*{name}"></td>
+                <td th:text="*{hunter_name}"></td>
                 <td th:text="*{ability_type}"></td>
                 <td th:text="*{ability_name}"></td>
                 <td th:text="*{quote}"></td>

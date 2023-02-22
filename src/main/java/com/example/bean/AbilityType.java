@@ -13,6 +13,6 @@ public class AbilityType {
     private String id;
 
     // 系統
-    private String name;
+    private String ability_name;
 
 }

@@ -13,7 +13,7 @@ public class Hunter {
     private Integer id;
 
     // キャラクター名
-    private String name;
+    private String hunter_name;
 
     // 系統
     private String ability_type;
